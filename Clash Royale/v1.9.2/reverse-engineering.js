@@ -15,7 +15,7 @@ const libg = {
         libg.module = Process.findModuleByName("libg.so")
         libg.base = libg.module.base
 
-        libg.add = function(x) { return libg.base.add(x)}
+        libg.add = function(x) {return libg.base.add(x)}
     }
 }
 const libc = {
@@ -104,15 +104,9 @@ const Utils = {
 };
 
 const Logger = {
-    print(x) {
-        console.log(x)
-    },
-    warning(x) {
-        console.warn(x)
-    },
-    error(x) {
-        console.error(x)
-    }
+    print(x) {console.log(x)},
+    warning(x) {console.warn(x)},
+    error(x) {console.error(x)}
 }
 
 const SetupDebugger = {
