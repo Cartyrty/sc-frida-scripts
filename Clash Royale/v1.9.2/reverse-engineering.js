@@ -5,7 +5,7 @@ It also hooks onto the Debugger:: functions so you can see crash errors or warns
 */
 const Config = {
     RedirectIP: true, // redirect the ip and port (set them below if true)
-        ip: "192.168.56.1", // ip to redirect to
+        ip: "127.0.0.1", // ip to redirect to
         port: "9339" // port to redirect to
 
 }
