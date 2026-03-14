@@ -161,7 +161,7 @@ const libg = {
 
 const Offsets = {
     Debugger: {
-        warning: 0x252E6C,
+        warning: 0x51B8F0,
         error:  0x736AFC,
     },    
     Messaging: {
