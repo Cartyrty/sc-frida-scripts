@@ -1,3 +1,4 @@
+// apk I used: https://mobile.softpedia.com/apk/clash-royale/3.1.0/
 const Config = {
     Debug: false, // if true, prints script logs. If false, will only print initilization info and message receive/ send
     NativeDebug: true, // if true, debugs game's internal Debugger:: logs
