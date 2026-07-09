@@ -82,5 +82,8 @@ class Main {
                     console.error(`Error hooking getaddrinfo ${e}`)
                 }
             }
-        }
+        })
     }
+}
+
+Main.main()
