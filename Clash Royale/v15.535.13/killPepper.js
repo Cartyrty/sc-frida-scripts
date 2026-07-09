@@ -44,7 +44,7 @@ class CryptoKiller {
     }
 
     static killDecryption() {
-        Interceptor.replace(libg.add(0x1249FA4), new NativeCallback(function() { // decrypter function
+        Interceptor.replace(libg.add(0x0 /* the offset here was wrong, wait until I fix it*/), new NativeCallback(function() { // decrypter function
             console.log("[+] Skipped decryption");
             return 1; // do nothing and force success
         }, 'int', []));
