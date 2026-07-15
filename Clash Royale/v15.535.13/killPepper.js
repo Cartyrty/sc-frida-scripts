@@ -21,7 +21,7 @@ let inAuthFunc = false
 class CryptoKiller {
     static init() {
         Interceptor.attach(libg.add(0x1237590), { // auth function
-            onEnter(args) {inAuthFunc = true;},onLeave() {inAuthFunc = false}})
+            onEnter(args) {inAuthFunc = true},onLeave() {inAuthFunc = false}})
 
         Interceptor.replace(libg.add(0x1387FA4), new NativeCallback((a1, a2, a3, a4, a5, a6) => { // encrypter function
                 Memory.copy(a3, a1, Number(a2)) // write unencrypted payload to encrypted payload, where a3 is the pointer to the encrypted payload, a1 is the pointer to the unencrypted payload, and a2 is the length of the payload
