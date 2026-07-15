@@ -49,7 +49,7 @@ class CryptoKiller {
         });
     }
     // when all is said and done, crypto will not be properly initialized. Meaning we only need to skip the initial loginmessage encryption.
-    // With crypto not properly initialized, the client will send the rest of the messages unencrypted by default
+    // With crypto not properly initialized, the client will send and read the rest of the messages unencrypted by default
 }
 
 class Main {
