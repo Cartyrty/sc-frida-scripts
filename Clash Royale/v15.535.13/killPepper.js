@@ -33,7 +33,7 @@ class CryptoKiller {
             onEnter(args) {
                 if (!inAuthFunc) return; // so we can get specifically the call from the auth function
                 // After encryption (which we just skipped) the auth function will append Client Public Key and other crypto related stuff to the header of the paylaod, we must next cut it off so the server receive it as normal
-                Memory.copy(args[1], args[1].add(80), Number(args[2].sub(80))) // copy the unencrypted payload to the original pointer, cutting off the crypto header. Also resize the payload length
+                Memory.copy(args[1], args[1].add(80), Number(args[2].sub(80))) // copy only the unencrypted payload to the original pointer, cutting off the crypto header. Also resize the payload length
                 // console.log(args[1].readByteArray(Number(args[2])))
             }
         });
