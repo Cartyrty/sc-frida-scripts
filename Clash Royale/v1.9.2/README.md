@@ -1,0 +1,1 @@
+Be aware: the scripts I wrote here aren't written very good; I wrote them like 8 months ago. I don't plan to refactor the code anytime soon, so while the scripts might *work*, I'd suggest refactoring the code if you plan to use these in any production environment
